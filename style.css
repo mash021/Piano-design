@@ -106,3 +106,7 @@ body {
 .copyright:hover {
     opacity: 1; /* شفافیت در هاور */
 }
+
+.span-text{
+    font-size: smaller;
+}
