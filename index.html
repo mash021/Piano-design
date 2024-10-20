@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beautiful Wooden Piano Design</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="piano">
+        <div class="piano-body"></div>
+        <div class="keys">
+            <div class="white-key" onmouseover="playSound('C')">
+                <div class="black-key" onmouseover="playSound('C#')"></div>
+            </div>
+            <div class="white-key" onmouseover="playSound('D')">
+                <div class="black-key" onmouseover="playSound('D#')"></div>
+            </div>
+            <div class="white-key" onmouseover="playSound('E')">
+                <div class="black-key" onmouseover="playSound('F#')"></div>
+            </div>
+            <div class="white-key" onmouseover="playSound('F')">
+                <div class="black-key" onmouseover="playSound('G#')"></div>
+            </div>
+            <div class="white-key" onmouseover="playSound('G')">
+                <div class="black-key" onmouseover="playSound('A#')"></div>
+            </div>
+            <div class="white-key" onmouseover="playSound('A')">
+                <div class="black-key" onmouseover="playSound('B')"></div>
+            </div>
+            <div class="white-key" onmouseover="playSound('B')"></div>
+        </div>
+        <div class="copyright">
+            &copy; Design By Mohammad Ali Sharifi.
+        </div>
+    </div>
+
+    <!-- Audio elements for piano notes -->
+    <audio id="C" src="c.wav"></audio>
+    <audio id="D" src="d.wav"></audio>
+    <audio id="D#" src="D-sharp3.mp3"></audio>
+    <audio id="E" src="E.wav"></audio>
+    <audio id="F" src="F.wav"></audio>
+    <audio id="F#" src="F-sharp3.mp3"></audio>
+    <audio id="G" src="g.wav"></audio>
+    <audio id="G#" src="G-sharp3.mp3"></audio>
+    <audio id="A" src="A.wav"></audio>
+    <audio id="A#" src="A-sharp3.mp3"></audio>
+    <audio id="B" src="B.wav"></audio>
+    
+    <script src="index.js"></script>
+   
+</body>
+</html>

@@ -1,0 +1,108 @@
+body {
+    background-color: #FFF0D1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.piano {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 400px; /* عرض پیانو */
+    background: url('src/img/dark-wood.png'); /* بافت چوب */
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    background-color: #B17457;
+}
+
+.keys {
+    display: flex;
+    position: relative;
+    margin-top: 10px;
+}
+
+.white-key {
+    width: 60px;
+    height: 200px;
+    background-color: white;
+    border: 1px solid #ccc;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    cursor: pointer; /* تغییر شکل ماوس به دست */
+    transition: background-color 0.2s;
+}
+
+.white-key:hover {
+    background-color: #e5e5e5; /* رنگ روشن تر روی هاور */
+}
+
+.black-key {
+    width: 40px;
+    height: 120px;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 40%;
+    margin-left: -20px;
+    z-index: 2;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    transition: transform 0.1s, background-color 0.2s;
+    cursor: pointer; /* تغییر شکل ماوس به دست */
+}
+
+.black-key:hover {
+    transform: translateY(-10px);
+    background-color: #333; /* رنگ تیره تر روی هاور */
+}
+
+/* Positioning the black keys */
+.white-key:nth-child(2) .black-key,
+.white-key:nth-child(3) .black-key,
+.white-key:nth-child(5) .black-key,
+.white-key:nth-child(6) .black-key,
+.white-key:nth-child(7) .black-key {
+    display: block;
+}
+
+.white-key:nth-child(1) .black-key,
+.white-key:nth-child(4) .black-key {
+    display: none;
+}
+
+/* Styles for the piano body */
+.piano-body {
+    width: 100%;
+    height: 20px;
+    background-color: #4A4947;
+    border-radius: 10px;
+    margin-top: -30px; /* برای قرار دادن کابین در بالای کلاویه‌ها */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+  /* کپی رایت */
+  .copyright {
+    color: #FFF0D1;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 10px;
+    opacity: 0.7; /* شفافیت */
+    transition: opacity 0.3s; /* افکت تغییر شفافیت */
+}
+
+.copyright:hover {
+    opacity: 1; /* شفافیت در هاور */
+}
